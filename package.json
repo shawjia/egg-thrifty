@@ -1,6 +1,6 @@
 {
-  "name": "egg-thrift",
-  "version": "1.0.0",
+  "name": "egg-thrifty",
+  "version": "0.1.3",
   "description": "Thrift plugin for egg",
   "eggPlugin": {
     "name": "thrift"
@@ -10,7 +10,9 @@
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "thrift": "^0.11.0"
+  },
   "devDependencies": {
     "autod": "^3.0.0",
     "autod-egg": "^1.0.0",
@@ -34,22 +36,17 @@
     "pkgfiles": "egg-bin pkgfiles",
     "autod": "autod"
   },
-  "files": [
-    "app.js",
-    "agent.js",
-    "config"
-  ],
   "ci": {
     "version": "8, 9"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-thrift.git"
+    "url": "git+https://github.com/shawjia/egg-thrifty.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/shawjia/egg-thrifty/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-thrift#readme",
+  "homepage": "https://github.com/shawjia/egg-thrifty#readme",
   "author": "shawjia",
   "license": "MIT"
 }
