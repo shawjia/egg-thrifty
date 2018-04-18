@@ -14,7 +14,7 @@ exports.thrift = {
 
   default: {
     timeout: 4000,
-    connect_timeout: 800,
+    connect_timeout: 4000,
     max_attempts: 10,
     transport: thrift.TFramedTransport,
     protocol: thrift.TBinaryProtocol,

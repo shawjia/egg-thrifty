@@ -87,7 +87,7 @@ const { Service } = require('egg');
 class TestService extends Service {
 
   doSth() {
-    const client = this.app.thrift.get('test');
+    const { client } = this.app.thrift.get('test');
 
     client.doSth(null, (err, data) => {
 
