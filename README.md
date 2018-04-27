@@ -53,8 +53,9 @@ exports.thrift = {
 
   default: {
     timeout: 4000,
-    connect_timeout: 800,
+    connect_timeout: 4000,
     max_attempts: 10,
+    reconnect: false,
     transport: thrift.TFramedTransport,
     protocol: thrift.TBinaryProtocol,
   },
@@ -75,6 +76,7 @@ config.thrift = {
       host: 'localhost',
       port: 1111,
       genjs: path.join(appInfo.baseDir, 'path/to/ThriftService.js'),
+      reconnect: true,
     },
   },
 };
